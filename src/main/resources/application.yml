@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+logging: 
+  level: 
+    root: debug
+
+spring: 
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      name: shareit
+      authentication-database: auth
+      username: app_user_us
+      password: appUsr01
+      database: user_repo
+
+security:
+  jwt:
+    token:
+      expire-length: 300000
+
+keystore:
+  ksalias: ss_shareit
+  kspass: weshareit20
+  resource:
+    path: ss_shareit.jks
